@@ -153,17 +153,23 @@ async def next_page(bot, query):
     if n_offset == 0:
         btn.append(
             [InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
-        )
+        ) btn.append(
+
+            [InlineKeyboardButton("♻️ Heaven Updates ♻️", url="https://t.me/HeavenForYouAll")])
     elif off_set is None:
         btn.append([InlineKeyboardButton("ᴘᴀɢᴇs", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")])
-    else:
+   btn.append(
+
+            [InlineKeyboardButton("♻️ Heaven Updates ♻️", url="https://t.me/HeavenForYouAll")]) else:
         btn.append(
             [
                 InlineKeyboardButton("ʙᴀᴄᴋ", callback_data=f"next_{req}_{key}_{off_set}"),
                 InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"),
                 InlineKeyboardButton("ɴᴇxᴛ", callback_data=f"next_{req}_{key}_{n_offset}")
             ],
-        )
+        )  btn.append(
+
+            [InlineKeyboardButton("♻️ Heaven Updates ♻️", url="https://t.me/HeavenForYouAll")])
     btn.insert(0, [
         InlineKeyboardButton("⚡ Cʜᴇᴄᴋ Bᴏᴛ PM ⚡", url=f"https://t.me/{temp.U_NAME}")
     ])
@@ -546,11 +552,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
                     InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                 ],[
-                    InlineKeyboardButton('🍁 Oᴡɴᴇʀ', callback_data="owner_info"),
-                    InlineKeyboardButton('🌿 Sᴜᴘᴘᴏʀᴛ', callback_data="kd_cnl")
+                    InlineKeyboardButton('🍁 ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url="https://t.me/HeavenForYouAll"),
+                    InlineKeyboardButton('🌿 ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ', url="https://t.me/HeavenRequest")
                 ],[
-                    InlineKeyboardButton('❗ Hᴇʟᴘ', callback_data='help'),
-                    InlineKeyboardButton('🕵️ Aʙᴏᴜᴛ', callback_data='about'),
+                   
+                    InlineKeyboardButton('🕵️ 𝙷𝚘𝚠 𝚃𝚘 𝚄𝚜𝚎', url="https://t.me/HeavenForYouAll/7878"),
                 ],[
                     InlineKeyboardButton('🔒 Cʟᴏsᴇ Mᴇɴᴜ', callback_data='close_data')
                   ]]
@@ -1163,11 +1169,15 @@ async def auto_filter(client, msg, spoll=False):
         req = message.from_user.id if message.from_user else 0
         btn.append(
             [InlineKeyboardButton("ᴘᴀɢᴇs", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="ɴᴇxᴛ",callback_data=f"next_{req}_{key}_{offset}")]
-        )
+        ). btn.append( 
+
+[InlineKeyboardButton("♻️ Heaven Updates ♻️", url="https://t.me/HeavenForYouAll")])
     else:
         btn.append(
             [InlineKeyboardButton(text="ɴᴏ ᴍᴏʀᴇ ᴘᴀɢᴇs ᴀᴠᴀɪʟᴀʙʟᴇ",callback_data="pages")]
-        )
+        ). btn.append( 
+
+[InlineKeyboardButton("♻️ Heaven Updates ♻️", url="https://t.me/HeavenForYouAll")])
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
     if imdb:
