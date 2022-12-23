@@ -51,7 +51,7 @@ async def start(client, message):
                     InlineKeyboardButton('🌿 ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ', url="https://t.me/HeavenRequest")
                   ],[
 
-                     InlineKeyboardButton('🕵️ 𝙷𝚘𝚠 𝚃𝚘 𝚞𝚜𝚎', url='https://t.me/HeavenForYouAll/7878'),
+                     InlineKeyboardButton('🕵️ 𝙷𝚘𝚠 𝚃𝚘 𝚞𝚜𝚎', url="https://t.me/HeavenForYouAll/7878"),
                   ],[
                     InlineKeyboardButton('🔒 Cʟᴏsᴇ Mᴇɴᴜ', callback_data='close_data')
                   ]]
@@ -101,7 +101,7 @@ async def start(client, message):
                     InlineKeyboardButton('🌿 ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ', url="https://t.me/HeavenRequest")
                   ],[
                     
-                    InlineKeyboardButton('🕵️ 𝙷𝚘𝚠 𝚃𝚘 𝚞𝚜𝚎', url='https://t.me/HeavenForYouAll/7878'),
+                    InlineKeyboardButton('🕵️ 𝙷𝚘𝚠 𝚃𝚘 𝚞𝚜𝚎', url="https://t.me/HeavenForYouAll/7878"),
                   ],[
                     InlineKeyboardButton('🔒 Cʟᴏsᴇ Mᴇɴᴜ', callback_data='close_data')
                   ]]
